@@ -1,0 +1,16 @@
+{
+  "name": "STC Service Now Tweaks",
+  "version": "1.2.4",
+  "manifest_version": 8,
+  "description": "STC-Specific modifications of Service Now.",
+
+    "content_scripts": [{
+    "matches": ["https://yale.service-now.com/*"],
+    "run_at": "document_end",
+    "js": ["jquery-1.7.2.min.js", "servicenowtweaks.js"],
+    "all_frames": true
+    
+  }]
+
+
+}

@@ -354,10 +354,10 @@ sndictionary = [
   { "term": "problem management", "definition": "(ITIL Service Operation) The process responsible for managing the lifecycle of all problems. Problem management proactively prevents incidents from happening and minimizes the impact of incidents that cannot be prevented." },
   { "term": "problem record", "definition": "(ITIL Service Operation) A record containing the details of a problem. Each problem record documents the lifecycle of a single problem." },
   { "term": "procedure", "definition": "A document containing steps that specify how to achieve an activity. Procedures are defined as part of processes. See also work instruction." },
-  { "term": "process", "definition": "A structured set of activities designed to accomplish a specific objective. A process takes one or more defined inputs and turns them into defined outputs. It may include any of the roles, responsibilities, tools and management controls required to reliably deliver the outputs. A process may define policies, standards, guidelines, activities and work instructions if they are needed." },
   { "term": "process control", "definition": "The activity of planning and regulating a process, with the objective of performing the process in an effective, efficient and consistent manner." },
   { "term": "process manager", "definition": "A role responsible for the operational management of a process. The process manager's responsibilities include planning and coordination of all activities required to carry out, monitor and report on the process. There may be several process managers for one process -for example, regional change managers or IT service continuity managers for each data center. The process manager role is often assigned to the person who carries out the process owner role, but the two roles may be separate" },
   { "term": "process owner", "definition": "The person who is held accountable for ensuring that a process is fit for purpose. The process owner's responsibilities include sponsorship, design, change management and continual improvement of the process and its metrics. This role can be assigned to the same person who carries out the process manager role, but the two roles may be separate in larger organizations." },
+  //{ "term": "process", "definition": "A structured set of activities designed to accomplish a specific objective. A process takes one or more defined inputs and turns them into defined outputs. It may include any of the roles, responsibilities, tools and management controls required to reliably deliver the outputs. A process may define policies, standards, guidelines, activities and work instructions if they are needed." },
   { "term": "production environment", "definition": "See live environment." },
   { "term": "profit center", "definition": "(ITIL Service Strategy) A business unit that charges for services provided. A profit center can be created with the objective of making a profit, recovering costs, or running at a loss. An IT service provider can be run as a cost center or a profit center." },
   { "term": "pro-forma", "definition": "A template or example document containing sample data that will be replaced with real values when these are available. " },
@@ -720,9 +720,12 @@ function findAndReplace(searchText, replacement, searchNode) {
 }
 
 function findAndReplaceTerms(){
+  //var whitespacereg = new RegExp(" ",g)
   for (var i = 0; i < sndictionary.length; i++) {
+    //term = sndictionary[i]["term"]
+    //term.replace(/\s/g,"\\s")
     findAndReplace(
-                  "\\b\(" + sndictionary[i]["term"] + "\)\\b",
+                  "\\b\(" + sndictionary[i]["term"] + "[s]{0,1}\)\\b",
                    '<span style="border-bottom: 1px dotted #ba0000;" title="' + sndictionary[i]["definition"] + '">$1</span>'
                   );
   }

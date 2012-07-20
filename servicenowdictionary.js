@@ -672,6 +672,7 @@ sndictionary = [
   { "term": "SDP", "definition": "service design package" },
   { "term": "SFA", "definition": "service failure analysis" },
   { "term": "WIP", "definition": "work in progress" },
+  { "term": "PVA", "definition": "Pain Value Analysis" },
   { "term": "YSMA", "definition": "Yale Service Manager Application" },
   { "term": "eSourcing Capability Model for Client Organizations", "definition": " (ITIL Service Strategy) A framework to help IT service providers develop their IT service management capabilities from a service sourcing perspective. It was developed by Carnegie Mellon University in the US. See also eSourcing Capability Model for Client Organizations." },
   { "term": "recovery", "definition": "(ITIL Service Design) (ITIL Service Operation) Returning a configuration item or an IT service to a working state. Recovery of an IT service often includes recovering data to a known consistent state. After recovery, further steps may be needed before the IT service can be made available to the users (restoration)." },
@@ -721,7 +722,7 @@ function findAndReplaceTerms(){
   for (var i = 0; i < sndictionary.length; i++) {
     findAndReplace(
                   "\\b" + sndictionary[i]["term"] + "\\b",
-                   '<span style="font-style:italic;" title="' + sndictionary[i]["definition"] + '">' + sndictionary[i]["term"] + '</span>'
+                   '<span style="font-weight:bold;" title="' + sndictionary[i]["definition"] + '">' + sndictionary[i]["term"] + '</span>'
                   );
   }
 }

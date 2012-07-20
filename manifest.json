@@ -1,13 +1,13 @@
 {
-  "name": "STC Service Now Tweaks",
-  "version": "1.2.4",
-  "manifest_version": 8,
-  "description": "STC-Specific modifications of Service Now.",
+  "name": "ITIL Dictionary Tooltips",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Provide definitions of ITIL terms as tooltips",
 
     "content_scripts": [{
-    "matches": ["https://yale.service-now.com/*"],
+    "matches": ["https://yale.service-now.com/*", "http://*/*"],
     "run_at": "document_end",
-    "js": ["jquery-1.7.2.min.js", "servicenowtweaks.js"],
+    "js": ["jquery-1.7.2.min.js", "servicenowdictionary.js"],
     "all_frames": true
     
   }]

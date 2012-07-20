@@ -683,6 +683,32 @@ sndictionary = [
   { "term": "relationship processes", "definition": "The ISO/IEC 20000 process group that includes business relationship management and supplier management." },  
 ]
 
+function findAndReplaceTerms(){
+  //var whitespacereg = new RegExp(" ",g)
+  //alert(sndictionary)
+  //setTimeout(function(){
+  for (var i = 0; i < sndictionary.length; i++) {
+    //term = sndictionary[i]["term"]
+    //term.replace(/\s/g,"\\s")
+    console.log("outside " + i)
+    //setTimeout(function(i){
+      lol = i
+      console.log("inside " + lol)
+      term = sndictionary[lol]["term"]
+      definition = sndictionary[lol]["definition"]
+      findAndReplace(
+                  "\\b\(" + term + "[s]{0,1}\)\\b",
+                   '<span style="border-bottom: 1px dotted #ba0000;" title="' + definition + '">$1</span>'
+                    );
+    //}, 10)
+  }
+  //},2000)
+}
+
+
+
+
+
 
 function findAndReplace(searchText, replacement, searchNode) {
   if (!searchText || typeof replacement === 'undefined') {
@@ -719,18 +745,10 @@ function findAndReplace(searchText, replacement, searchNode) {
   }
 }
 
-function findAndReplaceTerms(){
-  //var whitespacereg = new RegExp(" ",g)
-  for (var i = 0; i < sndictionary.length; i++) {
-    //term = sndictionary[i]["term"]
-    //term.replace(/\s/g,"\\s")
-    findAndReplace(
-                  "\\b\(" + sndictionary[i]["term"] + "[s]{0,1}\)\\b",
-                   '<span style="border-bottom: 1px dotted #ba0000;" title="' + sndictionary[i]["definition"] + '">$1</span>'
-                  );
-  }
-}
+
 
 jQuery(document).ready(function(){
+  //console.log("start" + Date())
   findAndReplaceTerms()
+  //console.log("end" + Date())
 })

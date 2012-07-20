@@ -625,6 +625,7 @@ sndictionary = [
   { "term": "SKMS", "definition": "service knowledge management system" },
   { "term": "PBA", "definition": "pattern of business activity " },
   { "term": "SLA", "definition": "service level agreement" },
+  { "term": "SLAs", "definition": "service level agreements" },
   { "term": "PDCA", "definition": "Plan-Do-Check-Act " },
   { "term": "SLM", "definition": "service level management" },
   { "term": "PFS", "definition": "prerequisite for success " },
@@ -722,7 +723,7 @@ function findAndReplaceTerms(){
   for (var i = 0; i < sndictionary.length; i++) {
     findAndReplace(
                   "\\b\(" + sndictionary[i]["term"] + "\)\\b",
-                   '<span style="border-bottom: 1px dotted #ba0000;" title="' + sndictionary[i]["definition"] + '">&</span>'
+                   '<span style="border-bottom: 1px dotted #ba0000;" title="' + sndictionary[i]["definition"] + '">$1</span>'
                   );
   }
 }

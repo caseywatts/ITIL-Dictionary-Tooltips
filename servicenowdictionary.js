@@ -721,8 +721,8 @@ function findAndReplace(searchText, replacement, searchNode) {
 function findAndReplaceTerms(){
   for (var i = 0; i < sndictionary.length; i++) {
     findAndReplace(
-                  "\\b" + sndictionary[i]["term"] + "\\b",
-                   '<span style="font-weight:bold;" title="' + sndictionary[i]["definition"] + '">' + sndictionary[i]["term"] + '</span>'
+                  "\\b\(" + sndictionary[i]["term"] + "\)\\b",
+                   '<span style="border-bottom: 1px dotted #ba0000;" title="' + sndictionary[i]["definition"] + '">&</span>'
                   );
   }
 }

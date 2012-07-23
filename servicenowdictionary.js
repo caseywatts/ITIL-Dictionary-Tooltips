@@ -221,13 +221,12 @@ sndictionary = [
   { "term": "component", "definition": "A general term that is used to mean one part of something more complex. For example, a computer system may be a component of an IT service; an application may be a component of a release unit. Components that need to be managed should be configuration items." },
   { "term": "computer telephony integration", "definition": "(ITIL Service Operation) Computer telephony integration is a general term covering any kind of integration between computers and telephone systems. It is most commonly used to refer to systems where an application displays detailed screens relating to incoming or outgoing telephone calls. See also automatic call distribution; interactive" },
   { "term": "concurrency", "definition": "A measure of the number of users engaged in the same operation at the same time. confidentiality" },
-  { "term": "(ITIL Service Design) A security principle that requires that data should only be accessed by authorized people." },
+  //{ "term": "(ITIL Service Design) A security principle that requires that data should only be accessed by authorized people." },
   { "term": "configuration baseline", "definition": "(ITIL Service Transition) The baseline of a configuration that has been formally agreed and is managed through the change management process. A configuration baseline is used as a basis for future builds, releases and changes." },
   { "term": "configuration control", "definition": "(ITIL Service Transition) The activity responsible for ensuring that adding, modifying or removing a configuration item is properly managed - for example, by submitting a request for change or service request." },
   { "term": "configuration identification", "definition": "(ITIL Service Transition) The activity responsible for collecting information about configuration items and their relationships, and loading this information into the configuration management database. Configuration identification is also responsible for labeling the configuration items themselves, so that the corresponding configuration records can be found." },
   { "term": "configuration item", "definition": "(ITIL Service Transition) Any component or other service asset that needs to be managed in order to deliver an IT service. Information about each configuration item is recorded in a configuration record within the configuration management system and is maintained throughout its lifecycle by service asset and configuration management. Configuration items are under the control of change management. They typically include IT services, hardware, software, buildings, people and formal documentation such as process documentation and service level agreements." },
   { "term": "configuration", "definition": "(ITIL Service Transition) A generic term used to describe a group of configuration items that work together to deliver an IT service, or a recognizable part of an IT service. Configuration is also used to describe the parameter settings for one or more configuration items." },
-  //{ "term": "configuration", "definition": "See service asset and configuration management." },
   { "term": "configuration management database", "definition": "(ITIL Service Transition) A database used to store configuration records throughout their lifecycle. The configuration management system maintains one or more configuration management databases, and each database stores attributes of configuration items, and relationships with other configuration items." },
   { "term": "configuration management system", "definition": "(ITIL Service Transition) A set of tools, data and information that is used to support service asset and configuration management. The CMS is part of an overall service knowledge management system and includes tools for collecting, storing, managing, updating, analyzing and presenting data about all configuration items and their relationships. The CMS may also include information about incidents, problems, known errors, changes and releases. The CMS is maintained by service asset and configuration management and is used by all IT service management processes. See also configuration management database." },
   { "term": "configuration record", "definition": "(ITIL Service Transition) A record containing the details of a configuration item. Each configuration record documents the lifecycle of a single configuration item. Configuration records are stored in a configuration management database and maintained as part of a configuration management system." },
@@ -683,7 +682,8 @@ sndictionary = [
   { "term": "relationship", "definition": "A connection or interaction between two people or things. In business relationship management, it is the interaction between the IT service provider and the business. Inservice asset and configuration management, it is a link between two configuration items that identifies a dependency or connection between them. For example, applications may be linked to the servers they run on, and IT services have many links to all the configuration items that contribute to that IT service." },
 ]
 
-//var lis = document.getElementsByTagName("li");
+//By doing this sequentially using timeouts, the javascript doesn't block page loading.
+//This causes to blink on when they're found, which takes a few seconds
 var counter = 0;
 function doWork() {
   counter += 1;
@@ -695,17 +695,7 @@ function doWork() {
 };
 
 
-//function doLoop(){
-  //for (var i = 0; i < sndictionary.length; i++) {
-    //doSetTimeout(i)
-  //}
-//}
-
-//function doSetTimeout(i){
-//setTimeout(findAndReplaceTerms(i), 5)
-//console.log("setting timeout" + i)
-//}
-
+//the "meat" of the javascript
 function findAndReplaceTerms(i){
       term = sndictionary[i]["term"]
       definition = sndictionary[i]["definition"]
@@ -716,11 +706,7 @@ function findAndReplaceTerms(i){
                     console.log("replacing" + i)
 }
 
-
-
-
-
-
+//utility function
 function findAndReplace(searchText, replacement, searchNode) {
   if (!searchText || typeof replacement === 'undefined') {
     // Throw error here if you want...
@@ -759,8 +745,5 @@ function findAndReplace(searchText, replacement, searchNode) {
 
 
 jQuery(document).ready(function(){
-  //console.log("start" + Date())
-  //findAndReplaceTerms()
   setTimeout(doWork, 1);
-  //console.log("end" + Date())
 })

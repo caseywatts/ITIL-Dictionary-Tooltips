@@ -1,4 +1,114 @@
 sndictionary = [
+  { "term": "ACD", "definition": "automatic call distribution" },
+  { "term": "DML", "definition": "definitive media library" },
+  { "term": "AM", "definition": "availability management" },
+  { "term": "ECAB", "definition": "emergency change advisory board" },
+  { "term": "AMIS", "definition": "availability management information" },
+  { "term": "ELS", "definition": "early life support system" },
+  { "term": "ASP", "definition": "application service provider" },
+  { "term": "eSCM-CL", "definition": "eSourcing Capability Model for Client Organizations" },
+  { "term": "AST", "definition": "agreed service time" },
+  { "term": "eSCM-SP", "definition": "eSourcing Capability Model for Service Providers" },
+  { "term": "BCM", "definition": "business continuity management" },
+  { "term": "FTA", "definition": "fault tree analysis" },
+  { "term": "BCP", "definition": "business continuity plan" },
+  { "term": "IRR", "definition": "internal rate of return" },
+  { "term": "BIA", "definition": "business impact analysis" },
+  { "term": "ISG", "definition": "IT steering group" },
+  { "term": "BMP", "definition": "Best Management Practice" },
+  { "term": "ISM", "definition": "information security management" },
+  { "term": "BRM", "definition": "business relationship manager" },
+  { "term": "ISMS", "definition": "information security management system" },
+  { "term": "BSI", "definition": "British Standards Institution" },
+  { "term": "ISO", "definition": "International Organization for Standardization" },
+  { "term": "CAB", "definition": "change advisory board " },
+  { "term": "ISP", "definition": "internet service provider" },
+  { "term": "CAPEX", "definition": "capital expenditure " },
+  //{ "term": "IT", "definition": "information technology" },
+  { "term": "CCM", "definition": "component capacity management " },
+  { "term": "ITSCM", "definition": "IT service continuity management" },
+  { "term": "CFIA", "definition": "component failure impact analysis " },
+  { "term": "ITSM", "definition": "IT service management" },
+  { "term": "CI", "definition": "configuration item " },
+  { "term": "itSMF", "definition": "IT Service Management Forum" },
+  { "term": "CMDB", "definition": "configuration management database " },
+  { "term": "IVR", "definition": "interactive voice response" },
+  { "term": "CMIS", "definition": "capacity management information " },
+  { "term": "KEDB", "definition": "known error database system" },
+  { "term": "CMM", "definition": "capability maturity model " },
+  { "term": "KPI", "definition": "key performance indicator" },
+  { "term": "CMMI", "definition": "Capability Maturity Model Integration " },
+  { "term": "LOS", "definition": "line of service" },
+  { "term": "CMS", "definition": "configuration management system " },
+  { "term": "MIS", "definition": "management information system" },
+  { "term": "COBIT", "definition": "Control OBjectives for Information and" },
+  { "term": "MoR", "definition": "Management of Risk related Technology" },
+  { "term": "COTS", "definition": "commercial off the shelf " },
+  { "term": "MTBF", "definition": "mean time between failures" },
+  { "term": "CSF", "definition": "critical success factor " },
+  { "term": "MTBSI", "definition": "mean time between service incidents" },
+  { "term": "CSI", "definition": "continual service improvement " },
+  { "term": "MTRS", "definition": "mean time to restore service" },
+  { "term": "CTI", "definition": "computer telephony integration " },
+  { "term": "MTTR", "definition": "mean time to repair" },
+  { "term": "DIKW", "definition": "Data-to-Information-to-Knowledge-to- " },
+  { "term": "NPV", "definition": "net present value" },
+  { "term": "OLA", "definition": "operational level agreement " },
+  { "term": "SIP", "definition": "service improvement plan" },
+  { "term": "OPEX", "definition": "operational expenditure " },
+  { "term": "SKMS", "definition": "service knowledge management system" },
+  { "term": "PBA", "definition": "pattern of business activity " },
+  { "term": "SLA", "definition": "service level agreement" },
+  { "term": "SLAs", "definition": "service level agreements" },
+  { "term": "PDCA", "definition": "Plan-Do-Check-Act " },
+  { "term": "SLM", "definition": "service level management" },
+  { "term": "PFS", "definition": "prerequisite for success " },
+  { "term": "SLP", "definition": "service level package" },
+  { "term": "PIR", "definition": "post-implementation review " },
+  { "term": "SLR", "definition": "service level requirement" },
+  { "term": "PMBOK", "definition": "Project Management Body of " },
+  { "term": "SMART", "definition": "specific, measurable, achievable, Knowledge relevant and time-bound" },
+  { "term": "PMI", "definition": "Project Management Institute" },
+  { "term": "PMO", "definition": "project management office" },
+  { "term": "PRINCE2", "definition": "PRojects IN Controlled Environments" },
+  { "term": "PSO", "definition": "projected service outage" },
+  { "term": "QA", "definition": "quality assurance" },
+  { "term": "QMS", "definition": "quality management system" },
+  { "term": "RACI", "definition": "responsible, accountable, consulted and informed" },
+  { "term": "SMIS", "definition": "security management information system" },
+  { "term": "SMO", "definition": "service maintenance objective" },
+  { "term": "SoC", "definition": "separation of concerns" },
+  { "term": "SOP", "definition": "standard operating procedure " },
+  { "term": "SOR", "definition": "statement of requirements " },
+  { "term": "sox", "definition": "Sarbanes-Oxley (US law)" },
+  { "term": "SPI", "definition": "service provider interface" },
+  { "term": "RCA", "definition": "root cause analysis " },
+  { "term": "SPM", "definition": "service portfolio management" },
+  { "term": "RFC", "definition": "request for change " },
+  { "term": "SPOF", "definition": "single point of failure" },
+  { "term": "ROA", "definition": "return on assets " },
+  { "term": "TCO", "definition": "total cost of ownership " },
+  { "term": "ROI", "definition": "return on investment " },
+  { "term": "TCU", "definition": "total cost of utilization " },
+  { "term": "RPO", "definition": "recovery point objective " },
+  //{ "term": "TO", "definition": "technical observation " },
+  { "term": "RTO", "definition": " recovery time objective " },
+  { "term": "TOR", "definition": "terms of reference" },
+  { "term": "SAC", "definition": "service acceptance criteria " },
+  { "term": "TQM", "definition": "total quality management" },
+  { "term": "SACM", "definition": "service asset and configuration " },
+  { "term": "UC", "definition": "underpinning contract management" },
+  { "term": "SAM", "definition": "software asset management " },
+  { "term": "UP", "definition": "user profile" },
+  { "term": "SCM", "definition": "service capacity management " },
+  { "term": "VBF", "definition": "vital business function" },
+  { "term": "SCMIS", "definition": "supplier and contract management " },
+  { "term": "VOI", "definition": "value on investment information system" },
+  { "term": "SDP", "definition": "service design package" },
+  { "term": "SFA", "definition": "service failure analysis" },
+  { "term": "WIP", "definition": "work in progress" },
+  { "term": "PVA", "definition": "Pain Value Analysis" },
+  { "term": "YSMA", "definition": "Yale Service Manager Application" },
   { "term": "acceptance", "definition": "Formal agreement that an IT service, process, plan or other deliverable is complete, accurate, reliable and meets its specified requirements. Acceptance is usually preceded by change evaluation or testing and is often required before proceeding to the next stage of a project or process. See also service acceptance criteria." },
   { "term": "access management", "definition": "(ITIL Service Operation) The process responsible for allowing users to make use of IT services, data or other assets. Access management helps to protect the confidentiality, integrity and availability of assets by ensuring that only authorized users are able to access or modify them. Access management implements the policies of information security management and is sometimes referred to as rights management or identity management." },
   { "term": "account manager", "definition": "(ITIL Service Strategy) A role that is very similar to that of the business relationship manager, but includes more commercial aspects. Most commonly used by Type III service providers when dealing with external customers." },
@@ -565,116 +675,6 @@ sndictionary = [
   { "term": "work order", "definition": "A formal request to carry out a defined activity. Work orders are often used by change management and by release and deployment management to pass requests to technical management and application management functions." },
   { "term": "workaround", "definition": "(ITIL Service Operation) Reducing or eliminating the impact of an incident or problem for which a full resolution is not yet available -for example, by restarting a failed configuration item. Workarounds for problems are documented in known error records. Workarounds for incidents that do not have associated problem records are documented in the incident record." },
   { "term": "workload", "definition": "The resources required to deliver an identifiable part of an IT service. Workloads may be categorized by users, groups of users, or functions within the IT service. This is used to assist in analyzing and managing the capacity, performance and utilization of configuration items and IT services. The term is sometimes used as a synonym for throughput." },
-  { "term": "ACD", "definition": "automatic call distribution" },
-  { "term": "DML", "definition": "definitive media library" },
-  { "term": "AM", "definition": "availability management" },
-  { "term": "ECAB", "definition": "emergency change advisory board" },
-  { "term": "AMIS", "definition": "availability management information" },
-  { "term": "ELS", "definition": "early life support system" },
-  { "term": "ASP", "definition": "application service provider" },
-  { "term": "eSCM-CL", "definition": "eSourcing Capability Model for Client Organizations" },
-  { "term": "AST", "definition": "agreed service time" },
-  { "term": "eSCM-SP", "definition": "eSourcing Capability Model for Service Providers" },
-  { "term": "BCM", "definition": "business continuity management" },
-  { "term": "FTA", "definition": "fault tree analysis" },
-  { "term": "BCP", "definition": "business continuity plan" },
-  { "term": "IRR", "definition": "internal rate of return" },
-  { "term": "BIA", "definition": "business impact analysis" },
-  { "term": "ISG", "definition": "IT steering group" },
-  { "term": "BMP", "definition": "Best Management Practice" },
-  { "term": "ISM", "definition": "information security management" },
-  { "term": "BRM", "definition": "business relationship manager" },
-  { "term": "ISMS", "definition": "information security management system" },
-  { "term": "BSI", "definition": "British Standards Institution" },
-  { "term": "ISO", "definition": "International Organization for Standardization" },
-  { "term": "CAB", "definition": "change advisory board " },
-  { "term": "ISP", "definition": "internet service provider" },
-  { "term": "CAPEX", "definition": "capital expenditure " },
-  //{ "term": "IT", "definition": "information technology" },
-  { "term": "CCM", "definition": "component capacity management " },
-  { "term": "ITSCM", "definition": "IT service continuity management" },
-  { "term": "CFIA", "definition": "component failure impact analysis " },
-  { "term": "ITSM", "definition": "IT service management" },
-  { "term": "CI", "definition": "configuration item " },
-  { "term": "itSMF", "definition": "IT Service Management Forum" },
-  { "term": "CMDB", "definition": "configuration management database " },
-  { "term": "IVR", "definition": "interactive voice response" },
-  { "term": "CMIS", "definition": "capacity management information " },
-  { "term": "KEDB", "definition": "known error database system" },
-  { "term": "CMM", "definition": "capability maturity model " },
-  { "term": "KPI", "definition": "key performance indicator" },
-  { "term": "CMMI", "definition": "Capability Maturity Model Integration " },
-  { "term": "LOS", "definition": "line of service" },
-  { "term": "CMS", "definition": "configuration management system " },
-  { "term": "MIS", "definition": "management information system" },
-  { "term": "COBIT", "definition": "Control OBjectives for Information and" },
-  { "term": "MoR", "definition": "Management of Risk related Technology" },
-  { "term": "COTS", "definition": "commercial off the shelf " },
-  { "term": "MTBF", "definition": "mean time between failures" },
-  { "term": "CSF", "definition": "critical success factor " },
-  { "term": "MTBSI", "definition": "mean time between service incidents" },
-  { "term": "CSI", "definition": "continual service improvement " },
-  { "term": "MTRS", "definition": "mean time to restore service" },
-  { "term": "CTI", "definition": "computer telephony integration " },
-  { "term": "MTTR", "definition": "mean time to repair" },
-  { "term": "DIKW", "definition": "Data-to-Information-to-Knowledge-to- " },
-  { "term": "NPV", "definition": "net present value" },
-  { "term": "OLA", "definition": "operational level agreement " },
-  { "term": "SIP", "definition": "service improvement plan" },
-  { "term": "OPEX", "definition": "operational expenditure " },
-  { "term": "SKMS", "definition": "service knowledge management system" },
-  { "term": "PBA", "definition": "pattern of business activity " },
-  { "term": "SLA", "definition": "service level agreement" },
-  { "term": "SLAs", "definition": "service level agreements" },
-  { "term": "PDCA", "definition": "Plan-Do-Check-Act " },
-  { "term": "SLM", "definition": "service level management" },
-  { "term": "PFS", "definition": "prerequisite for success " },
-  { "term": "SLP", "definition": "service level package" },
-  { "term": "PIR", "definition": "post-implementation review " },
-  { "term": "SLR", "definition": "service level requirement" },
-  { "term": "PMBOK", "definition": "Project Management Body of " },
-  { "term": "SMART", "definition": "specific, measurable, achievable, Knowledge relevant and time-bound" },
-  { "term": "PMI", "definition": "Project Management Institute" },
-  { "term": "PMO", "definition": "project management office" },
-  { "term": "PRINCE2", "definition": "PRojects IN Controlled Environments" },
-  { "term": "PSO", "definition": "projected service outage" },
-  { "term": "QA", "definition": "quality assurance" },
-  { "term": "QMS", "definition": "quality management system" },
-  { "term": "RACI", "definition": "responsible, accountable, consulted and informed" },
-  { "term": "SMIS", "definition": "security management information system" },
-  { "term": "SMO", "definition": "service maintenance objective" },
-  { "term": "SoC", "definition": "separation of concerns" },
-  { "term": "SOP", "definition": "standard operating procedure " },
-  { "term": "SOR", "definition": "statement of requirements " },
-  { "term": "sox", "definition": "Sarbanes-Oxley (US law)" },
-  { "term": "SPI", "definition": "service provider interface" },
-  { "term": "RCA", "definition": "root cause analysis " },
-  { "term": "SPM", "definition": "service portfolio management" },
-  { "term": "RFC", "definition": "request for change " },
-  { "term": "SPOF", "definition": "single point of failure" },
-  { "term": "ROA", "definition": "return on assets " },
-  { "term": "TCO", "definition": "total cost of ownership " },
-  { "term": "ROI", "definition": "return on investment " },
-  { "term": "TCU", "definition": "total cost of utilization " },
-  { "term": "RPO", "definition": "recovery point objective " },
-  //{ "term": "TO", "definition": "technical observation " },
-  { "term": "RTO", "definition": " recovery time objective " },
-  { "term": "TOR", "definition": "terms of reference" },
-  { "term": "SAC", "definition": "service acceptance criteria " },
-  { "term": "TQM", "definition": "total quality management" },
-  { "term": "SACM", "definition": "service asset and configuration " },
-  { "term": "UC", "definition": "underpinning contract management" },
-  { "term": "SAM", "definition": "software asset management " },
-  { "term": "UP", "definition": "user profile" },
-  { "term": "SCM", "definition": "service capacity management " },
-  { "term": "VBF", "definition": "vital business function" },
-  { "term": "SCMIS", "definition": "supplier and contract management " },
-  { "term": "VOI", "definition": "value on investment information system" },
-  { "term": "SDP", "definition": "service design package" },
-  { "term": "SFA", "definition": "service failure analysis" },
-  { "term": "WIP", "definition": "work in progress" },
-  { "term": "PVA", "definition": "Pain Value Analysis" },
-  { "term": "YSMA", "definition": "Yale Service Manager Application" },
   { "term": "eSourcing Capability Model for Client Organizations", "definition": " (ITIL Service Strategy) A framework to help IT service providers develop their IT service management capabilities from a service sourcing perspective. It was developed by Carnegie Mellon University in the US. See also eSourcing Capability Model for Client Organizations." },
   { "term": "recovery option", "definition": "(ITIL Service Design) A strategy for responding to an interruption to service. Commonly used strategies are manual workaround, reciprocal arrangement, gradual recovery, intermediate recovery, fast recovery, and immediate recovery. Recovery options maymake use of dedicated facilities or third-party facilities shared by multiple businesses." },
   { "term": "recovery", "definition": "(ITIL Service Design) (ITIL Service Operation) Returning a configuration item or an IT service to a working state. Recovery of an IT service often includes recovering data to a known consistent state. After recovery, further steps may be needed before the IT service can be made available to the users (restoration)." },
@@ -683,26 +683,37 @@ sndictionary = [
   { "term": "relationship processes", "definition": "The ISO/IEC 20000 process group that includes business relationship management and supplier management." },  
 ]
 
-function findAndReplaceTerms(){
-  //var whitespacereg = new RegExp(" ",g)
-  //alert(sndictionary)
-  //setTimeout(function(){
-  for (var i = 0; i < sndictionary.length; i++) {
-    //term = sndictionary[i]["term"]
-    //term.replace(/\s/g,"\\s")
-    console.log("outside " + i)
-    //setTimeout(function(i){
-      lol = i
-      console.log("inside " + lol)
-      term = sndictionary[lol]["term"]
-      definition = sndictionary[lol]["definition"]
+//var lis = document.getElementsByTagName("li");
+var counter = 0;
+function doWork() {
+  counter += 1;
+  findAndReplaceTerms(counter);
+  console.log("looping" + counter)
+  if (counter < sndictionary.length) {
+    setTimeout(doWork, 1);
+  }
+};
+
+
+//function doLoop(){
+  //for (var i = 0; i < sndictionary.length; i++) {
+    //doSetTimeout(i)
+  //}
+//}
+
+//function doSetTimeout(i){
+//setTimeout(findAndReplaceTerms(i), 5)
+//console.log("setting timeout" + i)
+//}
+
+function findAndReplaceTerms(i){
+      term = sndictionary[i]["term"]
+      definition = sndictionary[i]["definition"]
       findAndReplace(
                   "\\b\(" + term + "[s]{0,1}\)\\b",
                    '<span style="border-bottom: 1px dotted #ba0000;" title="' + definition + '">$1</span>'
                     );
-    //}, 10)
-  }
-  //},2000)
+                    console.log("replacing" + i)
 }
 
 
@@ -749,6 +760,7 @@ function findAndReplace(searchText, replacement, searchNode) {
 
 jQuery(document).ready(function(){
   //console.log("start" + Date())
-  findAndReplaceTerms()
+  //findAndReplaceTerms()
+  setTimeout(doWork, 1);
   //console.log("end" + Date())
 })

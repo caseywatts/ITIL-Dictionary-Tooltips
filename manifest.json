@@ -1,10 +1,10 @@
 {
   "name": "ITIL Dictionary Tooltips",
-  "version": "1.4",
-  "manifest_version": 7,
+  "version": "1.4.1",
+  "manifest_version": 8,
   "description": "Provide definitions of ITIL terms as tooltips",
     "content_scripts": [{
-    "matches": ["https://yale.service-now.com/*", "http://*/*"],
+    "matches": ["https://yale.service-now.com/*"],
     "run_at": "document_end",
     "js": ["jquery-1.7.2.min.js", "servicenowdictionary.js"],
     "all_frames": true
